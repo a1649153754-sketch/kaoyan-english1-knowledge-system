@@ -1,6 +1,6 @@
 [project]
 site_name = "考研英语一知识体系"
-site_description = "可持续迭代的考研英语一知识框架、规则卡、母题、边界库与错题闭环。"
+site_description = "可持续迭代的考研英语一知识框架、规则卡、母题、边界库、实战工坊与错题闭环。"
 site_author = "考研英语一知识体系贡献者"
 copyright = "Copyright &copy; 2026 考研英语一知识体系贡献者"
 docs_dir = "docs"
@@ -22,6 +22,11 @@ nav = [
     { "英译汉" = "06-translation.md" },
     { "写作" = "07-writing.md" },
     { "跨模块方法" = "08-method-library.md" },
+  ] },
+  { "实战工坊" = [
+    { "写作首稿与二稿" = "19-writing-lab.md" },
+    { "翻译拆句与重组" = "20-translation-lab.md" },
+    { "语境词汇与熟词生义" = "21-context-vocabulary-lab.md" },
   ] },
   { "复习系统" = [
     { "复习闭环" = "09-maintenance-loop.md" },

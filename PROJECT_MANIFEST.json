@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "date": "2026-08-25",
   "subject": "全国硕士研究生招生考试 201 英语（一）",
   "modules": 8,
@@ -10,8 +10,9 @@
   "boundary_cards": 42,
   "decision_trees": 12,
   "personal_links": 13,
+  "practice_labs": 3,
   "data_templates": 7,
   "repository_name": "kaoyan-english1-knowledge-system",
   "expected_pages_url": "https://a1649153754-sketch.github.io/kaoyan-english1-knowledge-system/",
-  "project_file_count": 66
+  "project_file_count": 69
 }

@@ -38,6 +38,14 @@ jobs:
       - name: Build documentation
         run: zensical build --clean
 
+      - name: Stage downloadable single-file edition
+        shell: bash
+        run: |
+          set -euo pipefail
+          version="$(cat VERSION)"
+          mkdir -p site/downloads
+          cp "dist/考研英语一知识体系_v${version}.md" site/downloads/
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
