@@ -8,7 +8,7 @@
 
 ## 当前版本
 
-**v1.0.0 · 2026-08-25**
+**v1.1.0 · 2026-08-25**
 
 | 模块 | 当前规模 |
 | --- | ---: |
@@ -18,6 +18,14 @@
 | 错误命题与失效边界 | 42 |
 | 个人高频疑问挂接 | 13 |
 | 高频任务决策树 | 12 |
+| 实战工坊 | 3 |
+
+## v1.1.0 新增
+
+- **写作实战工坊**：句子风险分级、五遍自改、小作文功能组件、八类主题论证地图、二稿闭环。
+- **翻译实战工坊**：六格结构表、六步算法、十二类高频结构、三稿法和六层复核。
+- **语境词汇工坊**：30 个高频多义词、12 组近义词边界、`make / guide` 功能拆分和 3/7/14 天回测。
+- GitHub Pages 构建时自动附带当前版本的单文件 Markdown 下载。
 
 ## 核心结构
 
@@ -25,7 +33,7 @@
 - **证据优先**：客观题记录最小证据区间和错项机制，翻译/写作记录二稿与迁移规则。
 - **固定编号**：真题、错题和个人问题可挂到 `K/Q/B/J` 编号，长期更新不打乱索引。
 - **数据闭环**：内置掌握度、真题、错题、词汇、长难句、翻译和写作 CSV 模板。
-- **网站发布**：内置 Zensical 与 GitHub Actions，可部署为 GitHub Pages。
+- **网站发布**：内置 Zensical 与 GitHub Actions，提交到 `main` 后自动部署。
 
 ## 快速阅读
 
@@ -35,14 +43,18 @@
 - [阅读理解 A](docs/04-reading.md)
 - [英译汉](docs/06-translation.md)
 - [写作](docs/07-writing.md)
+- [写作实战工坊](docs/19-writing-lab.md)
+- [翻译实战工坊](docs/20-translation-lab.md)
+- [语境词汇工坊](docs/21-context-vocabulary-lab.md)
 - [规则卡](docs/11-rule-cards.md)
 - [母题索引](docs/13-problem-archetypes.md)
 - [边界库](docs/14-counterexamples.md)
 - [官方范围与年度核对](docs/18-official-scope.md)
 
-## 下载单文件版本
+## 在线网站与单文件版
 
-- [考研英语一知识体系 v1.0.0（Markdown）](docs/downloads/考研英语一知识体系_v1.0.0.md)
+- [在线知识库](https://a1649153754-sketch.github.io/kaoyan-english1-knowledge-system/)
+- [考研英语一知识体系 v1.1.0（Markdown）](https://a1649153754-sketch.github.io/kaoyan-english1-knowledge-system/downloads/考研英语一知识体系_v1.1.0.md)
 
 ## 本地使用
 
@@ -66,13 +78,14 @@ python scripts/build_bundle.py
 1. 做题后记录年份、题号、母题 ID、节点、正确率、用时和错误标签。
 2. 客观题写最小证据与错项机制；翻译/写作必须完成二稿。
 3. 3/7/14 天回测，依据真实表现升降节点等级。
-4. 修改正文后运行校验与网站构建，再提交 Pull Request。
+4. 每周只集中修复 3—5 个 A+/A 节点，避免平均用力。
+5. 修改正文后运行校验与网站构建，再提交 Pull Request。
 
 ## 仓库结构
 
 ```text
 .
-├─ docs/        # 分章节知识库与网站正文
+├─ docs/        # 分章节知识库、实战工坊与网站正文
 ├─ data/        # 掌握度、真题、错题、词汇、长难句、翻译与写作模板
 ├─ scripts/     # 结构校验与单文件打包
 ├─ releases/    # 版本快照说明
