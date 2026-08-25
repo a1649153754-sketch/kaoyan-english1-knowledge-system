@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" rx="36" fill="url(#bg)"/>
+  <circle cx="1010" cy="110" r="155" fill="#ffffff" opacity="0.08"/>
+  <circle cx="1080" cy="520" r="230" fill="#ffffff" opacity="0.06"/>
+  <text x="72" y="150" fill="#93c5fd" font-size="34" font-family="Arial, sans-serif" letter-spacing="3">KAOYAN ENGLISH I</text>
+  <text x="72" y="260" fill="#ffffff" font-size="78" font-weight="700" font-family="Arial, 'Microsoft YaHei', sans-serif">考研英语一知识体系</text>
+  <text x="76" y="340" fill="#dbeafe" font-size="31" font-family="Arial, 'Microsoft YaHei', sans-serif">词汇 · 长难句 · 完形 · 阅读 · 新题型 · 翻译 · 写作</text>
+  <rect x="72" y="410" width="880" height="2" fill="#60a5fa" opacity="0.8"/>
+  <text x="76" y="480" fill="#bfdbfe" font-size="28" font-family="Arial, 'Microsoft YaHei', sans-serif">280 检查项 · 160 规则卡 · 56 母题 · 42 边界卡</text>
+  <text x="76" y="548" fill="#93c5fd" font-size="24" font-family="Arial, sans-serif">v1.0.0  ·  evidence-first  ·  continuously improvable</text>
+</svg>

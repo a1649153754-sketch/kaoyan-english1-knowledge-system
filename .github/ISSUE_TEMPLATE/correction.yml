@@ -1,0 +1,20 @@
+name: 内容纠错
+description: 报告定义、句法、证据或表达错误
+title: "[纠错] "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: 位置/编号
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: 问题与证据
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: 建议修正

@@ -1,0 +1,19 @@
+name: 知识点补充
+description: 建议新增节点、规则卡、母题或边界卡
+title: "[补充] "
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 类型
+      options: [知识节点, 规则卡, 母题, 边界卡, 决策树, 模板]
+  - type: textarea
+    id: content
+    attributes:
+      label: 内容与适用场景
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 证据或原创例句

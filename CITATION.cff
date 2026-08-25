@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+title: "考研英语一知识体系"
+message: "如在学习项目或二次整理中使用，请引用本仓库。"
+type: dataset
+version: "1.0.0"
+date-released: "2026-08-25"
+authors:
+  - family-names: "a1649153754-sketch"
+repository-code: "https://github.com/a1649153754-sketch/kaoyan-english1-knowledge-system"
+url: "https://a1649153754-sketch.github.io/kaoyan-english1-knowledge-system/"
+license: "CC-BY-NC-SA-4.0"
