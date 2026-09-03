@@ -9,6 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
+EXCLUDED_DIRS = {".git", ".cache", ".venv", "__pycache__", "dist", "private", "site"}
 
 REQUIRED = [
   "README.md",
@@ -110,7 +111,8 @@ for name, pattern in patterns.items():
 # Validate local Markdown links; anchors are intentionally ignored.
 link_pattern = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
 for md in ROOT.rglob("*.md"):
-    if ".git" in md.parts:
+    relative_parts = md.relative_to(ROOT).parts
+    if EXCLUDED_DIRS.intersection(relative_parts):
         continue
     body = md.read_text(encoding="utf-8")
     for target in link_pattern.findall(body):

@@ -7,5 +7,5 @@
 ## 校验
 - [ ] `python scripts/validate_project.py`
 - [ ] `python scripts/build_bundle.py`
-- [ ] `zensical build --clean`
+- [ ] `zensical build --clean --strict`
 - [ ] 未上传受版权保护的真题/教材全文

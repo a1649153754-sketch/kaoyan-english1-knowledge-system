@@ -23,8 +23,10 @@
 ```bash
 python scripts/validate_project.py
 python scripts/build_bundle.py
-zensical build --clean
+zensical build --clean --strict
 ```
+
+`build_bundle.py` 的当前版本输出位于被忽略的 `dist/`，供本地检查和 Pages 工作流暂存；历史发布归档只在明确发布时写入 `docs/downloads/` 或 `releases/`，不要让清理命令删除它们。
 
 然后更新 `VERSION`、`CHANGELOG.md`，提交分支并创建 Pull Request。
 

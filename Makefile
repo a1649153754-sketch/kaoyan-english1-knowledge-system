@@ -4,10 +4,10 @@ install:
 serve:
 	zensical serve
 build:
-	zensical build --clean
+	zensical build --clean --strict
 validate:
 	python scripts/validate_project.py
 bundle:
 	python scripts/build_bundle.py
 clean:
-	rm -rf site dist/*.md
+	rm -rf site .cache
