@@ -11,7 +11,7 @@
 ```bash
 python scripts/validate_project.py
 python scripts/build_bundle.py
-zensical build --clean
+zensical build --clean --strict
 ```
 
 Pull Request 中请说明修改模块、原因、验证方式和是否影响编号。
